@@ -19,18 +19,6 @@
              [label "ok"]
              ; Callback procedure for a button click:
              [callback (lambda (button event)
-                         (send item-selector-input get-value))])
+                         (message-box "Text Answer" (send item-selector-input get-value) #f))])
 (send item-selector show #t)
-(send item-selector-input get-seection)
 
-
-
-(define item-chosen (send item-selector-input get-value))
-
-item-chosen
-
-;(define item-chosen (get-field item-selector-item-selector-input))
-  
-;(message-box "Text Answer"
-;             item-chosen
-;             #f)
