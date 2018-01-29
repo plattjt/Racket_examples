@@ -1,4 +1,4 @@
-#lang rackjure ;racket/gui
+#lang racket ;racket/gui
 (require racket/gui/base)
 
 ;;Create a very basic window based GUI
